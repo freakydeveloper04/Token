@@ -1,0 +1,6 @@
+framework module Pods_FirebasePushNoti {
+  umbrella header "Pods-FirebasePushNoti-umbrella.h"
+
+  export *
+  module * { export * }
+}

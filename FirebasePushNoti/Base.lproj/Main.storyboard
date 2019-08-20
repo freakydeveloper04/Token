@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirebasePushNoti" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1v7-Lb-5fN">
+                                <rect key="frame" x="95" y="240" width="186" height="30"/>
+                                <state key="normal" title="GENERATE DEVICE TOKEN"/>
+                                <connections>
+                                    <action selector="btN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zXo-D1-HhA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Device Token" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CHS-GG-KSi">
+                                <rect key="frame" x="39" y="183" width="298" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FCM Token" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4q-hW-POH">
+                                <rect key="frame" x="33" y="398.5" width="309" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEVICE TOKEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKe-Xp-iht">
+                                <rect key="frame" x="43" y="123.5" width="289" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FCM TOKEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tw-eT-mdE">
+                                <rect key="frame" x="43" y="341" width="289" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOKEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NB-gd-uEf">
+                                <rect key="frame" x="16" y="43" width="343" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3P-v9-Swm">
+                                <rect key="frame" x="105" y="458.5" width="165" height="30"/>
+                                <state key="normal" title="GENERATE FCM TOKEN"/>
+                                <connections>
+                                    <action selector="btnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ju1-ez-8n4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VKe-Xp-iht" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="0SO-jB-ZUJ"/>
+                            <constraint firstItem="u3P-v9-Swm" firstAttribute="top" secondItem="n4q-hW-POH" secondAttribute="bottom" constant="30" id="3QG-et-sqa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n4q-hW-POH" secondAttribute="trailing" constant="33" id="3S0-aF-p78"/>
+                            <constraint firstItem="n4q-hW-POH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="3p4-ct-mdq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u3P-v9-Swm" secondAttribute="bottom" constant="178.5" id="AbB-SS-Vv5"/>
+                            <constraint firstItem="4NB-gd-uEf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Dep-nJ-meL"/>
+                            <constraint firstItem="1v7-Lb-5fN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="HSe-1B-GLg"/>
+                            <constraint firstItem="CHS-GG-KSi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="KZ1-0f-cCi"/>
+                            <constraint firstItem="n4q-hW-POH" firstAttribute="top" secondItem="8tw-eT-mdE" secondAttribute="bottom" constant="37" id="LIK-dp-9g8"/>
+                            <constraint firstItem="8tw-eT-mdE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="O4k-Le-E9W"/>
+                            <constraint firstItem="1v7-Lb-5fN" firstAttribute="top" secondItem="CHS-GG-KSi" secondAttribute="bottom" constant="27" id="Ogu-eG-K4I"/>
+                            <constraint firstItem="VKe-Xp-iht" firstAttribute="top" secondItem="4NB-gd-uEf" secondAttribute="bottom" constant="58" id="VMb-8Y-dvL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u3P-v9-Swm" secondAttribute="trailing" constant="105" id="VU7-Nb-1kU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VKe-Xp-iht" secondAttribute="trailing" constant="43" id="VlG-Qf-1We"/>
+                            <constraint firstItem="u3P-v9-Swm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="fpB-hs-cyx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8tw-eT-mdE" secondAttribute="trailing" constant="43" id="iun-mM-hHO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CHS-GG-KSi" secondAttribute="trailing" constant="38" id="kgi-rm-lU4"/>
+                            <constraint firstItem="CHS-GG-KSi" firstAttribute="top" secondItem="VKe-Xp-iht" secondAttribute="bottom" constant="39" id="lOO-sY-QGY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4NB-gd-uEf" secondAttribute="trailing" constant="16" id="sQX-sc-OjH"/>
+                            <constraint firstItem="8tw-eT-mdE" firstAttribute="top" secondItem="1v7-Lb-5fN" secondAttribute="bottom" constant="71" id="wF2-31-rvT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1v7-Lb-5fN" secondAttribute="trailing" constant="94" id="wIo-QW-dF3"/>
+                            <constraint firstItem="4NB-gd-uEf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="y90-io-3YO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fcmTokenField" destination="n4q-hW-POH" id="qYa-bx-UMl"/>
+                        <outlet property="tknFcm" destination="VKe-Xp-iht" id="kxb-XO-MCZ"/>
+                        <outlet property="tokenText" destination="CHS-GG-KSi" id="BGg-RO-2ne"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
