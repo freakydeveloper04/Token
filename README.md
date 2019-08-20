@@ -11,5 +11,5 @@ Import Pod files:
 Uses of application:
 
 - Can be used for sending notifications
-- Can be used for sending data to particular user ffrom Database.
+- Can be used for sending data to particular user from Database.
 - Knowing the user.
